@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>angular delete dialog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.16/angular.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <dialog show-dialog="openDialog" id="deletebutton" message="Are you sure you wan't to delete" title="Delete Dialog" callmethod="deleteit()"></dialog>
+
+     <button class="btn btn-success" ng-click="openDialog=true">open Dialog</button>
+</body>
+</html>
